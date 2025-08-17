@@ -38,7 +38,7 @@ export class RegistrarTransaccionComponent implements OnInit {
       tipo: v.tipo as 'compra' | 'venta',
       cantidad: Number(v.cantidad),
       precioUnitario: Number(v.precioUnitario),
-      detalle: v.detalle ?? undefined
+      observacion: v.detalle ?? undefined
     }).subscribe({
       next: () => {
         alert('Transaccion registrada');

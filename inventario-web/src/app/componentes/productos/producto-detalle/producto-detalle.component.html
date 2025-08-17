@@ -1,0 +1,58 @@
+<h2>Detalle del producto</h2>
+
+<div *ngIf="cargando()" class="estado">Cargando...</div>
+<div *ngIf="!cargando() && error()" class="estado error">{{ error() }}</div>
+
+<div *ngIf="!cargando() && !error() && producto()" class="form">
+    <label>
+        Nombre
+        <div class="valor">{{ producto()!.nombre }}</div>
+    </label>
+
+    <label>
+        Categoría
+        <div class="valor">{{ producto()!.categoria }}</div>
+    </label>
+
+    <label>
+        Precio
+        <div class="valor">{{ producto()!.precio | number:'1.2-2' }}</div>
+    </label>
+
+    <label>
+        Existencias
+        <div class="valor">{{ producto()!.existencias }}</div>
+    </label>
+
+    <label *ngIf="producto()!.descripcion">
+        Descripción
+        <div class="valor wrap">{{ producto()!.descripcion }}</div>
+    </label>
+
+    <label>
+        Imagen
+        <div class="valor">
+            <ng-container *ngIf="producto()!.urlImagen; else sinImagen">
+                <img [src]="producto()!.urlImagen" alt="Imagen del producto"
+                    style="max-width:200px; border:1px solid #ddd; border-radius:4px;">
+            </ng-container>
+            <ng-template #sinImagen>
+                <!-- Valor vacío -->
+            </ng-template>
+        </div>
+    </label>
+
+    <label>
+        Fecha Creación
+        <div class="valor wrap">{{ producto()!.fechaCreacion | date:'yyyy-MM-dd HH:mm:ss'}}</div>
+    </label>
+
+    <label>
+        Fecha Actualización
+        <div class="valor wrap">{{ producto()!.fechaActualizacion | date:'yyyy-MM-dd HH:mm:ss'}}</div>
+    </label>
+
+    <div class="acciones">
+        <a routerLink="/productos">Volver</a>
+    </div>
+</div>

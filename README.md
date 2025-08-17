@@ -178,13 +178,38 @@ ng serve -o --host x.x.x.x
 ## Evidencias
 
 - Listado dinámico de productos y transacciones con paginación
+
 ![Listado dinámico de productos con paginación.](https://github.com/lfpantoja/InventarioWeb/blob/main/imagenes/productos-listado-paginacion.png)
+
+![Listado dinámico de transacciones con paginación.](https://github.com/lfpantoja/InventarioWeb/blob/main/imagenes/transacciones-listado-paginacion.png)
+
 - Pantalla para la creación de productos
+
+![Creación de producto.](https://github.com/lfpantoja/InventarioWeb/blob/main/imagenes/registro-producto.png)
+
 - Pantalla para la edición de productos
+
+![Edición de producto.](https://github.com/lfpantoja/InventarioWeb/blob/main/imagenes/editar-producto.png)
+
 - Pantalla para la creación de transacciones
+
+![Creación de transacción.](https://github.com/lfpantoja/InventarioWeb/blob/main/imagenes/registro-transaccion.png)
+
 - Pantalla para la edición de transacciones.
+
+![Edición de transacción.](https://github.com/lfpantoja/InventarioWeb/blob/main/imagenes/editar-transaccion.png)
+
 - Pantalla de filtros dinámicos.
+
+![Filtro dinámico producto.](https://github.com/lfpantoja/InventarioWeb/blob/main/imagenes/filtro-dinamico-01.png)
+
+![Filtro dinámico transacción.](https://github.com/lfpantoja/InventarioWeb/blob/main/imagenes/filtro-dinamico-02.png)
+
 - Pantalla para la consulta de información de un formulario (extra).
+
+![Consulta producto.](https://github.com/lfpantoja/InventarioWeb/blob/main/imagenes/consulta-01.png)
+
+![Consulta transacción.](https://github.com/lfpantoja/InventarioWeb/blob/main/imagenes/consulta-02.png)
 
 ---
 

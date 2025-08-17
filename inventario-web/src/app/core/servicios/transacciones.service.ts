@@ -36,4 +36,12 @@ export class TransaccionesService {
       `${this.base}/historial`, { params }
     );
   }
+
+  obtener(id: string): Observable<Transaccion> {
+    return this.http.get<Transaccion>(`${this.base}/${id}`);
+  }
+
+  actualizarObservacion(id: string, observacion: string | null): Observable<void> {
+    return this.http.patch<void>(`${this.base}/${id}/observacion`, { observacion });
+  }
 }

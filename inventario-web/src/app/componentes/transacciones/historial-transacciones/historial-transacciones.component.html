@@ -27,6 +27,7 @@
       <th>Precio unit.</th>
       <th>Total</th>
       <th>Stock</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -38,6 +39,10 @@
       <td>{{ x.precioUnitario | number:'1.2-2' }}</td>
       <td>{{ x.precioTotal | number:'1.2-2' }}</td>
       <td>{{ x.stockActual }}</td>
+      <td class="acciones">
+        <a [routerLink]="['/transacciones', x.id, 'ver']">Ver</a>
+        <a [routerLink]="['/transacciones', x.id]">Editar</a>
+      </td>
     </tr>
   </tbody>
 </table>

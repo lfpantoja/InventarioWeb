@@ -25,6 +25,7 @@
       <td>{{ p.existencias }}</td>
       <td class="acciones">
         <a [routerLink]="['/productos', p.id]">Editar</a>
+        <a [routerLink]="['/productos', p.id, 'ver']">Ver</a>
         <button (click)="eliminar(p.id)">Eliminar</button>
       </td>
     </tr>

@@ -1,0 +1,41 @@
+<h2>Editar observación de transacción</h2>
+
+<div *ngIf="id() && form">
+
+  <div class="form readonly">
+    <label>Fecha
+      <div class="valor">{{ transaccion?.fecha | date:'yyyy-MM-dd HH:mm:ss' }}</div>
+    </label>
+
+    <label>Producto
+      <div class="valor">{{ nombreProducto || transaccion?.productoId }}</div>
+    </label>
+
+    <label>Tipo
+      <div class="valor">{{ transaccion?.tipo }}</div>
+    </label>
+
+    <label>Cantidad
+      <div class="valor">{{ transaccion?.cantidad }}</div>
+    </label>
+
+    <label>Precio unitario
+      <div class="valor">{{ transaccion?.precioUnitario | number:'1.2-2' }}</div>
+    </label>
+
+    <label>Total
+      <div class="valor">{{ transaccion?.precioTotal | number:'1.2-2' }}</div>
+    </label>
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="guardar()" class="form">
+    <label>Observación
+      <textarea formControlName="observacion" rows="5"></textarea>
+    </label>
+
+    <div class="acciones">
+      <button type="submit">Guardar</button>
+      <a [routerLink]="['/transacciones', id(), 'ver']">Cancelar</a>
+    </div>
+  </form>
+</div>

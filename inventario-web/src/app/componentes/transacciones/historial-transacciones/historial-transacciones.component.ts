@@ -1,6 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';  
 import { ProductosService } from '../../../core/servicios/productos.service';
 import { TransaccionesService } from '../../../core/servicios/transacciones.service';
 import { Producto } from '../../../modelos/producto.model';
@@ -8,7 +9,7 @@ import { Producto } from '../../../modelos/producto.model';
 @Component({
   standalone: true,
   selector: 'app-historial-transacciones',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './historial-transacciones.component.html',
   styleUrls: ['./historial-transacciones.component.scss']
 })

@@ -1,0 +1,42 @@
+<!-- transaccion-detalle.component.html -->
+<h2>Detalle de la transacción</h2>
+
+<div *ngIf="cargando()" class="estado">Cargando...</div>
+<div *ngIf="!cargando() && error()" class="estado error">{{ error() }}</div>
+
+<div *ngIf="!cargando() && !error() && transaccion()" class="form">
+    <label>Fecha
+        <div class="valor">{{ transaccion()!.fecha | date:'yyyy-MM-dd HH:mm:ss' }}</div>
+    </label>
+
+    <label>Producto
+        <div class="valor">{{ nombreProducto() || transaccion()!.productoId }}</div>
+    </label>
+
+    <label>Tipo
+        <div class="valor">{{ transaccion()!.tipo }}</div>
+    </label>
+
+    <label>Cantidad
+        <div class="valor">{{ transaccion()!.cantidad }}</div>
+    </label>
+
+    <label>Precio unitario
+        <div class="valor">{{ transaccion()!.precioUnitario | number:'1.2-2' }}</div>
+    </label>
+
+    <label>Total
+        <div class="valor">{{ transaccion()!.precioTotal | number:'1.2-2' }}</div>
+    </label>
+
+    <label *ngIf="transaccion()!.observacion">
+        Observación
+        <div class="valor wrap">{{ transaccion()!.observacion }}</div>
+    </label>
+
+    <div class="acciones">
+        <a routerLink="/transacciones">Volver</a>
+        <br>
+        <a [routerLink]="['/transacciones', transaccion()!.id]">Editar observación</a>
+    </div>
+</div>

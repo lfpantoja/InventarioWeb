@@ -6,7 +6,7 @@ export interface Transaccion {
   cantidad: number;
   precioUnitario: number;       // si tu backend lo calcula, puedes omitir en la UI
   precioTotal?: number;         // calculado en DB (solo lectura)
-  detalle?: string | null;      // o 'observacion' si dejaste ese nombre
+  observacion?: string | null;      // o 'observacion' si dejaste ese nombre
 }
 
 export interface FiltroHistorial {
