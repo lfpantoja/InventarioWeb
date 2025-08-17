@@ -1,17 +1,29 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+# -----------------------------
+# .NET / C#
+# -----------------------------
+**/bin/
+**/obj/
+*.user
+*.suo
+*.csproj.user
+*.sln.docstates
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
+# -----------------------------
+# Angular / Node
+# -----------------------------
+**/dist/
+**/tmp/
+**/out-tsc/
+**/bazel-out/
+**/.angular/cache/
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
+**/node_modules/
+npm-debug.log*
+yarn-error.log*
 
+# -----------------------------
 # IDEs and editors
+# -----------------------------
 .idea/
 .project
 .classpath
@@ -28,15 +40,18 @@ yarn-error.log
 !.vscode/extensions.json
 .history/*
 
+# -----------------------------
 # Miscellaneous
-/.angular/cache
+# -----------------------------
 .sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
+connect.lock
+coverage/
+libpeerconnection.log
 testem.log
-/typings
+typings/
 
-# System files
+# -----------------------------
+# OS / System files
+# -----------------------------
 .DS_Store
 Thumbs.db
