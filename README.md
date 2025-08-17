@@ -5,8 +5,8 @@
 ### Resumen de versiones
 - **.NET SDK**: 8.0.x
 - **Visual Studio**: Community 2022 17.14.12
-- **Entity Framework Core**: 9.0.4
-- **Npgsql EF Core**: 9.0.4
+- **Entity Framework Core**: 9.0.8
+- **Npgsql EF Core**: 9.0.8
 - **Swashbuckle.AspNetCore**: 9.0.3
 - **PostgreSQL**: 17.4
 - **Node.js**: 20.19.4
