@@ -173,6 +173,17 @@ En caso de requerir abrir con la IP del dispositivo se agrega --host x.x.x.x
 ```bash
 ng serve -o --host x.x.x.x
 ```
+---
+
+## Evidencias
+
+- Listado dinámico de productos y transacciones con paginación
+- Pantalla para la creación de productos
+- Pantalla para la edición de productos
+- Pantalla para la creación de transacciones
+- Pantalla para la edición de transacciones.
+- Pantalla de filtros dinámicos.
+- Pantalla para la consulta de información de un formulario (extra).
 
 ---
 
