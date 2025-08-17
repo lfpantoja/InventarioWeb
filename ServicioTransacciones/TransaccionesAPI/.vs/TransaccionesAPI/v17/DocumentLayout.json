@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioTransacciones\\TransaccionesAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F90880C8-C788-49F6-BAD8-EFF10D9BDE38}|TransaccionesAPI.csproj|c:\\users\\lpant\\source\\repos\\inventarioweb\\serviciotransacciones\\transaccionesapi\\controllers\\transaccionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F90880C8-C788-49F6-BAD8-EFF10D9BDE38}|TransaccionesAPI.csproj|solutionrelative:controllers\\transaccionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D943D40-7D23-4FC6-9D54-A4D3E2E80E23}|..\\TransaccionesInfraestructura\\TransaccionesInfraestructura.csproj|c:\\users\\lpant\\source\\repos\\inventarioweb\\serviciotransacciones\\transaccionesinfraestructura\\servicios\\transaccionservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D943D40-7D23-4FC6-9D54-A4D3E2E80E23}|..\\TransaccionesInfraestructura\\TransaccionesInfraestructura.csproj|c:\\users\\lpant\\source\\repos\\inventarioweb\\serviciotransacciones\\transaccionesinfraestructura\\servicios\\transaccionservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F90880C8-C788-49F6-BAD8-EFF10D9BDE38}|TransaccionesAPI.csproj|c:\\users\\lpant\\source\\repos\\inventarioweb\\serviciotransacciones\\transaccionesapi\\controllers\\transaccionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F90880C8-C788-49F6-BAD8-EFF10D9BDE38}|TransaccionesAPI.csproj|solutionrelative:controllers\\transaccionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,30 +17,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TransaccionServicio.cs",
               "DocumentMoniker": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioTransacciones\\TransaccionesInfraestructura\\Servicios\\TransaccionServicio.cs",
               "RelativeDocumentMoniker": "..\\TransaccionesInfraestructura\\Servicios\\TransaccionServicio.cs",
               "ToolTip": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioTransacciones\\TransaccionesInfraestructura\\Servicios\\TransaccionServicio.cs",
               "RelativeToolTip": "..\\TransaccionesInfraestructura\\Servicios\\TransaccionServicio.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAIwFwAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-17T18:08:42.409Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TransaccionesController.cs",
               "DocumentMoniker": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioTransacciones\\TransaccionesAPI\\Controllers\\TransaccionesController.cs",
               "RelativeDocumentMoniker": "Controllers\\TransaccionesController.cs",
               "ToolTip": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioTransacciones\\TransaccionesAPI\\Controllers\\TransaccionesController.cs",
               "RelativeToolTip": "Controllers\\TransaccionesController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAcwBcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-17T18:07:28.944Z",
               "EditorCaption": ""
