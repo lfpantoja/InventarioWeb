@@ -41,12 +41,13 @@
 > `p.WithOrigins("http://localhost:4200")`  
 
 > **Configuración requerida**: (`appsettings.json`)
-> {
->   "ConnectionStrings": {
->   	"Default": "Host=localhost;Port=5432;Database=productosdb;Username=postgres;Password=postgres"
-> 	}
-> }
-
+```
+	{
+		"ConnectionStrings": {
+			"Default": "Host=localhost;Port=5432;Database=productosdb;Username=postgres;Password=postgres"
+		}
+	}
+```
 
 ---
 
