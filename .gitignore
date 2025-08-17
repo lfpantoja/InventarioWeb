@@ -1,12 +1,33 @@
-# .NET
+# ==============================
+# .NET / Visual Studio
+# ==============================
 **/bin/
 **/obj/
+**/TestResults/
+**/BuildLog.*
+.vs/
 *.user
 *.suo
 *.csproj.user
 *.sln.docstates
+*.pdb
+*.cache
+*.dll
+*.exe
+*.vshost.*
+*.dbmdl
+*.dbproj.schemaview
 
+# Archivos de cache y metadata de VS/.NET
+*.v2
+*.bin
+*.vsidx
+*.dbcache
+*.json.backup
+
+# ==============================
 # Angular / Node
+# ==============================
 **/node_modules/
 **/dist/
 **/.angular/cache/
@@ -15,7 +36,9 @@
 npm-debug.log*
 yarn-error.log*
 
-# OS/IDE
+# ==============================
+# OS / IDE
+# ==============================
 .DS_Store
 Thumbs.db
 .vscode/
