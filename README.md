@@ -34,14 +34,14 @@
 		- `Microsoft.EntityFrameworkCore.Relational` 9.0.8
 		- `Npgsql.EntityFrameworkCore.PostgreSQL` 9.0.4
 		- `Swashbuckle.AspNetCore` 9.0.3
-	- **Base de Datos**: PostgreSQL con bases de datos `productosdb` con tablas `productos` y `transacciones`
+	- **Base de Datos**: PostgreSQL con bases de datos `productosdb` con la tabla `productos`
 
 > **CORS**: las APIs deben permitir el origen `http://localhost:4200`.  
 > En .NET de cada API se lo agrega en `Program.cs`:  
 > `p.WithOrigins("http://localhost:4200")`  
 
-> **Configuración requerida**: (`appsettings.json`)
-```
+**Configuración requerida**: (`appsettings.json`)
+```json
 	{
 		"ConnectionStrings": {
 			"Default": "Host=localhost;Port=5432;Database=productosdb;Username=postgres;Password=postgres"
@@ -49,9 +49,66 @@
 	}
 ```
 
+2. **Microservicio: TransaccionesAPI**
+	- **.NET SDK**: 8.0.x
+	- **NuGet**: mismas versiones en todos los proyectos .NET
+		- `Microsoft.EntityFrameworkCore` 9.0.8
+		- `Microsoft.EntityFrameworkCore.Design` 9.0.8
+		- `Microsoft.EntityFrameworkCore.Relational` 9.0.8
+		- `Npgsql.EntityFrameworkCore.PostgreSQL` 9.0.4
+		- `Swashbuckle.AspNetCore` 9.0.3
+	- **Base de Datos**: PostgreSQL con bases de datos `productosdb` con la tabla `transacciones`
+
+> **CORS**: las APIs deben permitir el origen `http://localhost:4200`.  
+> En .NET de cada API se lo agrega en `Program.cs`:  
+> `p.WithOrigins("http://localhost:4200")` 
+
+**Configuración requerida**: (`appsettings.json`)
+```json
+	{
+		"ConnectionStrings": {
+			"Default": "Host=localhost;Port=5432;Database=productosdb;Username=postgres;Password=postgres"
+		},
+		"Servicios": {
+			"Productos": {
+				"BaseUrl": "http://localhost:5005"
+			}
+		}
+	}
+```
+
+3. **Frontend: inventario-web (Angular)**
+	- **Node.js**: 20.19.4
+	- **npm**: 10.8.2
+	- **Angular CLI**: 20.1.6
+
+**Configuración requerida**: (`src/environments/environment.ts`)
+```ts
+	export const environment = {
+		production: false,
+		productosApi: 'http://localhost:5005',
+		transaccionesApi: 'http://localhost:5006' 
+	};
+```
 ---
 
 ## Ejecución del backend (local)
+Base de Datos (PostgreSQL)
+- Crear Base de Datos `productosdb`
+- Ejecutar los scripts SQL de productos y transacciones.
+- Verificar acceso: (Host, Puerto, Usuario, Contraseña).
+
+### Backend Productos
+
+1. Buscamos en el directorio `ServicioProducto` el archivo `ProductosAPI.sln`
+```
+ServicioProducto/
+├── ProductosAPI/
+│   └── ProductosAPI.sln
+├── ProductosAplicacion/
+├── ProductosDominio/
+└── ProductosInfraestructura/
+```
 
 ---
 
