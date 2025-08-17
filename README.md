@@ -90,9 +90,13 @@
 		transaccionesApi: 'http://localhost:5006' 
 	};
 ```
+
+> [!IMPORTANT]
+> Clonar el proyecto
+
 ---
 
-## Ejecución del backend (local)
+## Ejecución del backend (local - Visual Studio 2022)
 Base de Datos (PostgreSQL)
 - Crear Base de Datos `productosdb`
 - Ejecutar los scripts SQL de productos y transacciones.
@@ -110,13 +114,38 @@ ServicioProducto/
 └── ProductosInfraestructura/
 ```
 
+2. En el Explorador de la solución buscamos el archivo `launchSettings.json` para buscar el siguiente código donde cambiaremos el puerto.
+```
+"applicationUrl": "http://localhost:5005"
+```
+
+3. Iniciar depuración con la tecla F5.
+
+### Backend Transacciones
+
+1. Buscamos en el directorio `ServicioTransacciones` el archivo `TransaccionesAPI.sln`
+```
+ServicioTransacciones/
+├── TransaccionesAPI/
+│   └── TransaccionesAPI.sln
+├── TransaccionesAplicacion/
+├── TransaccionesDominio/
+└── TransaccionesInfraestructura/
+```
+
+2. En el Explorador de la solución buscamos el archivo `launchSettings.json` para buscar el siguiente código donde cambiaremos el puerto.
+```
+"applicationUrl": "http://localhost:5006"
+```
+
+3. Iniciar depuración con la tecla F5.
+
 ---
 
 ## Ejecución del frontend (local)
 
-1) **Clonar** y entrar al proyecto
+1) **entrar** al proyecto
 ```bash
-git clone <URL_DEL_REPOSITORIO>
 cd inventario-web
 ```
 

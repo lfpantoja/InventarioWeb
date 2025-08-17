@@ -3,7 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioProducto\\ProductosAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D824889-5CD1-2E56-8960-AFC02FF6F416}|..\\ProductosInfraestructura\\ProductosInfraestructura.csproj|c:\\users\\lpant\\source\\repos\\inventarioweb\\servicioproducto\\productosinfraestructura\\productosinfraestructura.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{78CF3A7F-2CD3-439B-8A2C-FEE537BA5C2A}|ProductosAPI.csproj|c:\\users\\lpant\\source\\repos\\inventarioweb\\servicioproducto\\productosapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{78CF3A7F-2CD3-439B-8A2C-FEE537BA5C2A}|ProductosAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78CF3A7F-2CD3-439B-8A2C-FEE537BA5C2A}|ProductosAPI.csproj|c:\\users\\lpant\\source\\repos\\inventarioweb\\servicioproducto\\productosapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,13 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductosInfraestructura",
-              "DocumentMoniker": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioProducto\\ProductosInfraestructura\\ProductosInfraestructura.csproj",
-              "RelativeDocumentMoniker": "..\\ProductosInfraestructura\\ProductosInfraestructura.csproj",
-              "ToolTip": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioProducto\\ProductosInfraestructura\\ProductosInfraestructura.csproj",
-              "RelativeToolTip": "..\\ProductosInfraestructura\\ProductosInfraestructura.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-17T05:36:11.716Z",
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioProducto\\ProductosAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioProducto\\ProductosAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-17T06:30:00.095Z",
               "EditorCaption": ""
             },
             {
@@ -43,7 +45,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioProducto\\ProductosAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-17T01:51:08.473Z",
               "EditorCaption": ""
@@ -58,8 +60,7 @@
               "RelativeToolTip": "Controllers\\ProductosController.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAwwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T23:48:10.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-16T23:48:10.327Z"
             }
           ]
         }
