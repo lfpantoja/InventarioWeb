@@ -144,7 +144,7 @@ ServicioTransacciones/
 
 ## Ejecución del frontend (local)
 
-1) **entrar** al proyecto
+1) **Entrar** al proyecto
 ```bash
 cd inventario-web
 ```
@@ -187,7 +187,10 @@ ng serve -o --host x.x.x.x
     }
   }
   ```
-Build para generar el dist
+
+build para generar el dist
+serve para depurar el proyecto
+
 ---
 
 ## Endpoints esperados por el frontend
