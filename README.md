@@ -178,6 +178,7 @@ ng serve -o --host x.x.x.x
 ## Evidencias
 
 - Listado dinámico de productos y transacciones con paginación
+![Listado dinámico de productos con paginación.](https://drive.google.com/drive-viewer/AKGpihZTS1EKBnueUrfRzONRqHQJUNulGP0C1KtE9_EDIjlphuBstXWG4Pls0XZqZnsr4IKN0CHlTVY4eReCEsEMzKfRN9CZ6L-Bfw=w1920-h945-rw-v1)
 - Pantalla para la creación de productos
 - Pantalla para la edición de productos
 - Pantalla para la creación de transacciones
