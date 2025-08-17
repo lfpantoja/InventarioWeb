@@ -26,7 +26,7 @@ public class TransaccionServicio(ContextoTransacciones db, IProductosClient prod
         if (t.Fecha == default) t.Fecha = DateTime.UtcNow;
 
         db.Transacciones.Add(t);
-        await db.SaveChangesAsync(ct);  // precio_total se calcula en DB
+        await db.SaveChangesAsync(ct);  
 
         return t;
     }
@@ -79,5 +79,16 @@ public class TransaccionServicio(ContextoTransacciones db, IProductosClient prod
             .ToListAsync(ct);
 
         return new HistorialResultado(total, page, pageSize, items);
+    }
+
+    public async Task<bool> ActualizarObservacionAsync(Guid id, string? observacion, CancellationToken ct)
+    {
+        var filas = await db.Transacciones
+            .Where(x => x.Id == id)
+            .ExecuteUpdateAsync(setters =>
+                setters.SetProperty(t => t.Observacion, observacion),
+                ct);
+
+        return filas > 0;
     }
 }

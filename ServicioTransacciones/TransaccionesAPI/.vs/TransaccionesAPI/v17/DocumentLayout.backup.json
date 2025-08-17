@@ -44,20 +44,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TransaccionesController.cs",
-              "DocumentMoniker": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioTransacciones\\TransaccionesAPI\\Controllers\\TransaccionesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TransaccionesController.cs",
-              "ToolTip": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioTransacciones\\TransaccionesAPI\\Controllers\\TransaccionesController.cs",
-              "RelativeToolTip": "Controllers\\TransaccionesController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAIwEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T03:44:07.192Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -80,8 +68,32 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T02:50:16.591Z",
+              "WhenOpened": "2025-08-17T02:50:16.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioTransacciones\\TransaccionesAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioTransacciones\\TransaccionesAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-16T03:45:35.118Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransaccionesController.cs",
+              "DocumentMoniker": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioTransacciones\\TransaccionesAPI\\Controllers\\TransaccionesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TransaccionesController.cs",
+              "ToolTip": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioTransacciones\\TransaccionesAPI\\Controllers\\TransaccionesController.cs",
+              "RelativeToolTip": "Controllers\\TransaccionesController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAIwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T03:44:07.192Z"
             },
             {
               "$type": "Document",
@@ -142,19 +154,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-08-16T04:12:31.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioTransacciones\\TransaccionesAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\lpant\\source\\repos\\InventarioWeb\\ServicioTransacciones\\TransaccionesAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-16T03:45:35.118Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",

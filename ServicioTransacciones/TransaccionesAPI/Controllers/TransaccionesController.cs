@@ -8,6 +8,9 @@ namespace TransaccionesAPI.Controllers;
 [Route("api/transacciones")]
 public class TransaccionesController(ITransaccionServicio servicio) : ControllerBase
 {
+
+    public record ObservacionDto(string? Observacion);
+
     [HttpPost]
     public async Task<IActionResult> Registrar([FromBody] Transaccion t, CancellationToken ct)
     {
@@ -43,24 +46,28 @@ public class TransaccionesController(ITransaccionServicio servicio) : Controller
 
         if (!string.IsNullOrWhiteSpace(desde))
         {
-            // Si te llegan solo fechas (YYYY-MM-DD), las tratamos como inicio del día UTC
-            var dtmp = DateTime.Parse(desde); // o DateOnly.Parse(desde)
-            d = DateTime.SpecifyKind(dtmp.Date, DateTimeKind.Utc); // 00:00:00Z
+            var dtmp = DateTime.Parse(desde); 
+            d = DateTime.SpecifyKind(dtmp.Date, DateTimeKind.Utc); 
         }
 
         if (!string.IsNullOrWhiteSpace(hasta))
         {
             var htmp = DateTime.Parse(hasta);
-            // fin del día UTC (23:59:59.999...)
             h = DateTime.SpecifyKind(htmp.Date.AddDays(1).AddTicks(-1), DateTimeKind.Utc);
         }
 
-        // sanity check
         if (d.HasValue && h.HasValue && d > h)
             return BadRequest(new { mensaje = "'desde' no puede ser mayor que 'hasta'" });
 
         var res = await servicio.HistorialAsync(page, pageSize, productoId, tipo, d, h, ct);
         return Ok(res);
+    }
+
+    [HttpPatch("{id:guid}/observacion")]
+    public async Task<IActionResult> ActualizarObservacion(Guid id, [FromBody] ObservacionDto dto, CancellationToken ct)
+    {
+        var ok = await servicio.ActualizarObservacionAsync(id, dto.Observacion, ct);
+        return ok ? NoContent() : NotFound();
     }
 
 }

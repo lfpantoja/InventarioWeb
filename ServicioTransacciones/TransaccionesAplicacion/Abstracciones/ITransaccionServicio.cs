@@ -12,6 +12,8 @@ public interface ITransaccionServicio
         Guid? productoId, string? tipo,
         DateTime? desde, DateTime? hasta,
         CancellationToken ct);
+
+    Task<bool> ActualizarObservacionAsync(Guid id, string? observacion, CancellationToken ct);
 }
 
 public record HistorialItem(
