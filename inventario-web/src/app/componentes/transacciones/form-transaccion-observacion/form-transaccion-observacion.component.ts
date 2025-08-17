@@ -1,4 +1,3 @@
-// features/transacciones/form-transaccion-observacion/form-transaccion-observacion.component.ts
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder } from '@angular/forms';
@@ -58,7 +57,7 @@ export class FormTransaccionObservacionComponent implements OnInit {
 
         const obs = this.form.value.observacion ?? null;
         this.transApi.actualizarObservacion(id, obs).subscribe(() => {
-            this.router.navigate(['/transacciones', id, 'ver']); // vuelve al detalle
+            this.router.navigate(['/transacciones', id, 'ver']);
         });
     }
 }

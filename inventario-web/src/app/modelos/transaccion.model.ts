@@ -1,19 +1,19 @@
 export interface Transaccion {
   id?: string;
-  fecha?: string;               // lo pone el servidor si no se envia
+  fecha?: string;
   tipo: 'compra' | 'venta';
   productoId: string;
   cantidad: number;
-  precioUnitario: number;       // si tu backend lo calcula, puedes omitir en la UI
-  precioTotal?: number;         // calculado en DB (solo lectura)
-  observacion?: string | null;      // o 'observacion' si dejaste ese nombre
+  precioUnitario: number;
+  precioTotal?: number;
+  observacion?: string | null;
 }
 
 export interface FiltroHistorial {
   productoId?: string;
   tipo?: 'compra' | 'venta';
-  desde?: string;   // ISO
-  hasta?: string;   // ISO
+  desde?: string;
+  hasta?: string;
   page?: number;
   pageSize?: number;
 }

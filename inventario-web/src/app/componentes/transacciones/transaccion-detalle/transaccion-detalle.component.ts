@@ -1,4 +1,3 @@
-// features/transacciones/transaccion-detalle/transaccion-detalle.component.ts
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
@@ -30,7 +29,7 @@ export class TransaccionDetalleComponent implements OnInit {
     this.transApi.obtener(id).subscribe({
       next: (t) => {
         this.transaccion.set(t);
-        // cargar nombre del producto (opcional)
+        // nombre de producto
         this.prodApi.obtener(t.productoId).subscribe({
           next: (p) => this.nombreProducto.set(p.nombre),
           error: () => this.nombreProducto.set('—')

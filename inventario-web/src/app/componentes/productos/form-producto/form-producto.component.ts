@@ -43,8 +43,8 @@ export class FormProductoComponent implements OnInit {
     const id = this.id();
 
     const obs$ = id
-      ? this.api.actualizar(id, data)                              // Observable<void>
-      : this.api.crear(data).pipe(map(() => void 0));              // Observable<void>
+      ? this.api.actualizar(id, data)
+      : this.api.crear(data).pipe(map(() => void 0));
 
     obs$.subscribe(() => this.router.navigate(['/productos']));
   }
