@@ -1,0 +1,56 @@
+<div class="toolbar">
+  <div class="filters">
+    <input [(ngModel)]="nombre" placeholder="Nombre" />
+    <input [(ngModel)]="categoria" placeholder="Categoria" />
+    <button (click)="buscar()">Buscar</button>
+  </div>
+  <a class="btn" routerLink="/productos/nuevo">+ Nuevo</a>
+</div>
+
+<table class="tabla" *ngIf="!cargando(); else cargandoTpl">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Categoria</th>
+      <th>Precio</th>
+      <th>Existencias</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of paginaActual()">
+      <td>{{ p.nombre }}</td>
+      <td>{{ p.categoria }}</td>
+      <td>{{ p.precio | number:'1.2-2' }}</td>
+      <td>{{ p.existencias }}</td>
+      <td class="acciones">
+        <a [routerLink]="['/productos', p.id]">Editar</a>
+        <button (click)="eliminar(p.id)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ng-template #cargandoTpl>
+  <div class="loading">Cargando...</div>
+</ng-template>
+
+<div class="paginacion">
+  <div class="info">
+    Página {{ page() }} de {{ totalPaginas() }} · {{ total() }} registros
+  </div>
+  <div class="controles">
+    <button (click)="irA(1)" [disabled]="page()===1">«</button>
+    <button (click)="irA(page()-1)" [disabled]="page()===1">‹</button>
+    <input type="number" [ngModel]="page()" (ngModelChange)="irA($event)" min="1" [max]="totalPaginas()">
+    <button (click)="irA(page()+1)" [disabled]="page()===totalPaginas()">›</button>
+    <button (click)="irA(totalPaginas())" [disabled]="page()===totalPaginas()">»</button>
+
+    <select [ngModel]="pageSize()" (ngModelChange)="pageSize.set($event); irA(1)">
+      <option [ngValue]="10">10</option>
+      <option [ngValue]="20">20</option>
+      <option [ngValue]="50">50</option>
+      <option [ngValue]="100">100</option>
+    </select>
+  </div>
+</div>

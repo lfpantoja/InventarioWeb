@@ -1,0 +1,11 @@
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesDominio\bin\Debug\net8.0\TransaccionesDominio.deps.json
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesDominio\bin\Debug\net8.0\TransaccionesDominio.dll
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesDominio\bin\Debug\net8.0\TransaccionesDominio.pdb
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesDominio\obj\Debug\net8.0\TransaccionesDominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesDominio\obj\Debug\net8.0\TransaccionesDominio.AssemblyInfoInputs.cache
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesDominio\obj\Debug\net8.0\TransaccionesDominio.AssemblyInfo.cs
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesDominio\obj\Debug\net8.0\TransaccionesDominio.csproj.CoreCompileInputs.cache
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesDominio\obj\Debug\net8.0\TransaccionesDominio.dll
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesDominio\obj\Debug\net8.0\refint\TransaccionesDominio.dll
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesDominio\obj\Debug\net8.0\TransaccionesDominio.pdb
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesDominio\obj\Debug\net8.0\ref\TransaccionesDominio.dll

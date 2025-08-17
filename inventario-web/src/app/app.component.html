@@ -1,0 +1,39 @@
+<div class="layout" [class.is-collapsed]="colapsado()">
+  <!-- Sidebar -->
+  <aside class="sidebar" [class.is-collapsed]="colapsado()">
+    <div class="brand" (click)="toggle()" title="Contraer / expandir">
+      <span class="logo">📦</span>
+      <span class="title">Inventario</span>
+    </div>
+
+    <nav class="nav">
+      <a routerLink="/productos" routerLinkActive="active">
+        <span class="ico">🧾</span>
+        <span class="txt">Productos</span>
+      </a>
+
+      <a routerLink="/transacciones/registrar" routerLinkActive="active">
+        <span class="ico">➕</span>
+        <span class="txt">Registrar</span>
+      </a>
+
+      <a routerLink="/transacciones/historial" routerLinkActive="active">
+        <span class="ico">📊</span>
+        <span class="txt">Historial</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Contenido -->
+  <div class="main">
+    <header class="topbar">
+      <button class="ghost" (click)="toggle()" aria-label="menu">☰</button>
+      <div class="spacer"></div>
+      <div class="user"><span class="avatar">IW</span></div>
+    </header>
+
+    <section class="content">
+      <router-outlet></router-outlet>
+    </section>
+  </div>
+</div>

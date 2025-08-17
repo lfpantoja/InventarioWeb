@@ -1,0 +1,63 @@
+<h2>Historial de transacciones</h2>
+
+<div class="filtros">
+  <select [(ngModel)]="productoId">
+    <option value="">Todos los productos</option>
+    <option *ngFor="let p of productos" [value]="p.id">{{ p.nombre }}</option>
+  </select>
+
+  <select [(ngModel)]="tipo">
+    <option value="">Todos</option>
+    <option value="compra">Compra</option>
+    <option value="venta">Venta</option>
+  </select>
+
+  <input type="date" [(ngModel)]="desde">
+  <input type="date" [(ngModel)]="hasta">
+  <button (click)="buscar(1)">Filtrar</button>
+</div>
+
+<table class="tabla">
+  <thead>
+    <tr>
+      <th>Fecha</th>
+      <th>Producto</th>
+      <th>Tipo</th>
+      <th>Cantidad</th>
+      <th>Precio unit.</th>
+      <th>Total</th>
+      <th>Stock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let x of items">
+      <td>{{ x.fecha | date:'short' }}</td>
+      <td>{{ x.nombreProducto }}</td>
+      <td>{{ x.tipo }}</td>
+      <td>{{ x.cantidad }}</td>
+      <td>{{ x.precioUnitario | number:'1.2-2' }}</td>
+      <td>{{ x.precioTotal | number:'1.2-2' }}</td>
+      <td>{{ x.stockActual }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="paginacion">
+  <div class="info">
+    Página {{ page }} de {{ totalPaginas() }} · {{ total }} registros
+  </div>
+  <div class="controles">
+    <button (click)="irA(1)" [disabled]="page===1">«</button>
+    <button (click)="irA(page-1)" [disabled]="page===1">‹</button>
+    <input type="number" [ngModel]="page" (ngModelChange)="irA($event)" min="1" [max]="totalPaginas()">
+    <button (click)="irA(page+1)" [disabled]="page===totalPaginas()">›</button>
+    <button (click)="irA(totalPaginas())" [disabled]="page===totalPaginas()">»</button>
+
+    <select [ngModel]="pageSize" (ngModelChange)="cambiarTamanio($event)">
+      <option [ngValue]="10">10</option>
+      <option [ngValue]="20">20</option>
+      <option [ngValue]="50">50</option>
+      <option [ngValue]="100">100</option>
+    </select>
+  </div>
+</div>

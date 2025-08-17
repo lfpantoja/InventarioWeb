@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TransaccionesAplicacion/1.0.0": {
+        "dependencies": {
+          "TransaccionesDominio": "1.0.0"
+        },
+        "runtime": {
+          "TransaccionesAplicacion.dll": {}
+        }
+      },
+      "TransaccionesDominio/1.0.0": {
+        "runtime": {
+          "TransaccionesDominio.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TransaccionesAplicacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TransaccionesDominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

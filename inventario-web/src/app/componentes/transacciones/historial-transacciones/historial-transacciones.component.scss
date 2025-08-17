@@ -1,0 +1,35 @@
+.filtros {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla th,
+.tabla td {
+    padding: .6rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.paginacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: .75rem;
+}
+
+.paginacion .controles {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.paginacion input[type="number"] {
+    width: 64px;
+}

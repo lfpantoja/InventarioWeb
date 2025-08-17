@@ -1,0 +1,57 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 1rem;
+
+  .filters {
+    display: flex;
+    gap: .5rem;
+  }
+
+  .btn {
+    background: #6c63ff;
+    color: #fff;
+    padding: .5rem .9rem;
+    border-radius: .5rem;
+    text-decoration: none;
+  }
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla th,
+.tabla td {
+  padding: .6rem;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.acciones {
+  display: flex;
+  gap: .5rem;
+}
+
+.paginacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: .75rem;
+}
+
+.paginacion .controles {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.paginacion input[type="number"] {
+  width: 64px;
+}
+
+.loading {
+  padding: 1rem;
+}

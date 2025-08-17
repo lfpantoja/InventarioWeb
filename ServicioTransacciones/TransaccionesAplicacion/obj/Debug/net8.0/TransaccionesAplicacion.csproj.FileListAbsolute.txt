@@ -1,0 +1,15 @@
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\bin\Debug\net8.0\TransaccionesAplicacion.deps.json
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\bin\Debug\net8.0\TransaccionesAplicacion.dll
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\bin\Debug\net8.0\TransaccionesAplicacion.pdb
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\bin\Debug\net8.0\TransaccionesDominio.dll
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\bin\Debug\net8.0\TransaccionesDominio.pdb
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\obj\Debug\net8.0\TransaccionesAplicacion.csproj.AssemblyReference.cache
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\obj\Debug\net8.0\TransaccionesAplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\obj\Debug\net8.0\TransaccionesAplicacion.AssemblyInfoInputs.cache
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\obj\Debug\net8.0\TransaccionesAplicacion.AssemblyInfo.cs
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\obj\Debug\net8.0\TransaccionesAplicacion.csproj.CoreCompileInputs.cache
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\obj\Debug\net8.0\Transacc.B741933D.Up2Date
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\obj\Debug\net8.0\TransaccionesAplicacion.dll
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\obj\Debug\net8.0\refint\TransaccionesAplicacion.dll
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\obj\Debug\net8.0\TransaccionesAplicacion.pdb
+C:\Users\lpant\source\repos\ServicioTransacciones\TransaccionesAplicacion\obj\Debug\net8.0\ref\TransaccionesAplicacion.dll
