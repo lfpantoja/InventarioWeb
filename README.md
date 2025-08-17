@@ -40,6 +40,14 @@
 > En .NET de cada API se lo agrega en `Program.cs`:  
 > `p.WithOrigins("http://localhost:4200")`  
 
+> **Configuración requerida**: (`appsettings.json`)
+> {
+>   "ConnectionStrings": {
+>   	"Default": "Host=localhost;Port=5432;Database=productosdb;Username=postgres;Password=postgres"
+> 	}
+> }
+
+
 ---
 
 ## Ejecución del backend (local)
