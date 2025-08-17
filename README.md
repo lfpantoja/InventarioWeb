@@ -93,14 +93,14 @@
 
 > [!IMPORTANT]
 > Clonar el proyecto
+> Base de Datos (PostgreSQL)
+> - Crear Base de Datos `productosdb`
+> - Ejecutar los scripts SQL de productos y transacciones.
+> - Verificar acceso: (Host, Puerto, Usuario, Contraseña).
 
 ---
 
 ## Ejecución del backend (local - Visual Studio 2022)
-Base de Datos (PostgreSQL)
-- Crear Base de Datos `productosdb`
-- Ejecutar los scripts SQL de productos y transacciones.
-- Verificar acceso: (Host, Puerto, Usuario, Contraseña).
 
 ### Backend Productos
 
