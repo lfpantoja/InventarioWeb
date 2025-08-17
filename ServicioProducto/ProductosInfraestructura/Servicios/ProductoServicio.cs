@@ -32,7 +32,6 @@ public class ProductoServicio(ContextoProductos db) : IProductoServicio
         if (existe)
             throw new NombreProductoDuplicadoException(nombre);
 
-        // Alta
         p.Id = Guid.NewGuid();
         p.Nombre = nombre;
         p.FechaCreacion = DateTime.UtcNow;
@@ -46,7 +45,6 @@ public class ProductoServicio(ContextoProductos db) : IProductoServicio
         }
         catch (DbUpdateException ex) when (EsViolacionUnica(ex))
         {
-            // Por si dos requests concurrentes pasan el AnyAsync al mismo tiempo.
             throw new NombreProductoDuplicadoException(nombre);
         }
 

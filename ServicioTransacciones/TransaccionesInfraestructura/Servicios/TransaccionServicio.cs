@@ -10,7 +10,6 @@ public class TransaccionServicio(ContextoTransacciones db, IProductosClient prod
 {
     public async Task<Transaccion> RegistrarAsync(Transaccion t, CancellationToken ct)
     {
-        // Validaciones de negocio
         if (t.Cantidad <= 0) throw new ArgumentException("La cantidad debe ser mayor a cero.", nameof(t.Cantidad));
         if (t.PrecioUnitario < 0) throw new ArgumentException("El precio unitario no puede ser negativo.", nameof(t.PrecioUnitario));
         if (string.IsNullOrWhiteSpace(t.Tipo) || (t.Tipo != "compra" && t.Tipo != "venta"))
