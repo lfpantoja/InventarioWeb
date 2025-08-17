@@ -13,23 +13,28 @@
 - **npm**: 10.8.2
 - **Angular CLI**: 20.1.6
 
+---
+
 ### Requisitos del entorno
 - **Sistema Operativo**: Windows 11 Pro x64
-- **Base de Datos**: PostgreSQL localhost:5432
+- **Base de Datos**: PostgreSQL `localhost:5432`
+- **Conectividad**: Puertos libres
+	- **ProductosAPI**: `http://localhost:5005`
+	- **TransaccionesAPI**: `http://localhost:5006`
+	- **Frontend Angular**: `http://localhost:4200`
 
+---	
 
-
-
-- **Node.js**: 20.19.4  
-- **npm**: 10.8.2  
-- **Angular CLI**: 20.1.6  
-- **SO**: Windows 11 Pro x64  
-- **APIs** en local:
-  - **ProductosAPI**: `http://localhost:5005`
-  - **TransaccionesAPI**: `http://localhost:5006`
-- **Visual Studio**: 2022 Community
-- **Microsoft.EntityFrameworkCore 9.0.8**
-  
+### Requisitos por proyecto
+1. **Microservicio: ProductosAPI**
+	- **.NET SDK**: 8.0.x
+	- **NuGet**: mismas versiones en todos los proyectos .NET
+		- `Microsoft.EntityFrameworkCore` 9.0.8
+		- `Microsoft.EntityFrameworkCore.Design` 9.0.8
+		- `Microsoft.EntityFrameworkCore.Relational` 9.0.8
+		- `Npgsql.EntityFrameworkCore.PostgreSQL` 9.0.4
+		- `Swashbuckle.AspNetCore` 9.0.3
+	- **Base de Datos**: PostgreSQL con bases de datos `productosdb` con tablas `productos` y `transacciones`
 
 > **CORS**: las APIs deben permitir el origen `http://localhost:4200`.  
 > En .NET de cada API se lo agrega en `Program.cs`:  
